@@ -1,13 +1,13 @@
 // var searchBtn = document.getElementById('search-btn') //html line 26
 var userInput = document.getElementById('search-box') //html line 24
 var currentWeather = document.getElementById('current-weather') //html line 29
-var cityName = document.getElementById('cityName')
-var currentTemp = document.getElementById('current-Temp')
-var currentWind = document.getElementById('current-Wind')
-var currentHumid = document.getElementById('humid')
-var searchBtn = document.querySelectorAll(".search-btn")[0]
-var search = document.getElementById('search-city')
-var historyList = document.getElementById('historyList')
+var cityName = document.getElementById('cityName') // html line 45
+var currentTemp = document.getElementById('current-Temp') // html line 50
+var currentWind = document.getElementById('current-Wind') // html line 51
+var currentHumid = document.getElementById('humid') // html line 52
+var searchBtn = document.querySelectorAll(".search-btn")[0] // html line 31
+var search = document.getElementById('search-city') // html line 26
+var historyList = document.getElementById('historyList') // html line 36
 
 
 // today date
