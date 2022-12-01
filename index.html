@@ -15,18 +15,32 @@
     <title>Weather Dashboard</title>
 </head>
 
+
+<!-- body -->
+
 <body>
     <header id="header">
         <h1>Weather Dashboard</h1>
     </header>
-
+    <!-- search city for weather forecast -->
     <aside id="search-city">
         <h2>Search for a City:</h2>
         <input type="text" placeholder="Saint John" id="search-box">
         <br>
-        <button type="button" class="btn btn-primary" id="search-btn">Search</button>
-    </aside>
 
+        <button type="button" class="btn btn-primary search-btn">Search</button>
+        <hr>
+        <button type="button" class="btn btn-info" id="clearHistory">Clear History</button>
+        <br>
+
+        <ul id="historyList">
+
+        </ul>
+
+    </aside>
+    <!-- search city for weather forecast -->
+
+    <!-- current weather forecast -->
     <main id="current-weather">
         <h2 id="cityName"><span></span></h2>
         <img src="" alt="" srcset="" id="weather-icon">
@@ -38,26 +52,63 @@
         <p id="humid"></p>
 
     </main>
+    <!-- current weather forecast -->
 
+    <!-- 5-Day Forecast -->
     <section id="five-day">
+
 
         <h2>5-Day Forecast:</h2>
 
         <div id="container">
             <div class="five-Day-forecast">
                 <h4 id="day-1"></h4>
-                <img src="" alt="" srcset="" id="day1-icon">
-                <p id="day1-Temp"></p>
-                <p id="day1-Wind"></p>
-                <p id="day1-humid"></p>
+                <br>
+                <img src="" alt="" srcset="" id="day1-icon"><br>
+                <p id="day1-Temp"></p><br>
+                <p id="day1-Wind"></p><br>
+                <p id="day1-humid"></p><br>
             </div>
-            <div class="five-Day-forecast"></div>
-            <div class="five-Day-forecast"></div>
-            <div class="five-Day-forecast"></div>
-            <div class="five-Day-forecast"></div>
+
+            <div class="five-Day-forecast">
+                <h4 id="day-2"></h4>
+                <br>
+                <img src="" alt="" srcset="" id="day2-icon"><br>
+                <p id="day2-Temp"></p><br>
+                <p id="day2-Wind"></p><br>
+                <p id="day2-humid"></p><br>
+            </div>
+
+            <div class="five-Day-forecast">
+                <h4 id="day-3"></h4>
+                <br>
+                <img src="" alt="" srcset="" id="day3-icon"><br>
+                <p id="day3-Temp"></p><br>
+                <p id="day3-Wind"></p><br>
+                <p id="day3-humid"></p><br>
+            </div>
+
+            <div class="five-Day-forecast">
+                <h4 id="day-4"></h4>
+                <br>
+                <img src="" alt="" srcset="" id="day4-icon"><br>
+                <p id="day4-Temp"></p><br>
+                <p id="day4-Wind"></p><br>
+                <p id="day4-humid"></p><br>
+            </div>
+
+            <div class="five-Day-forecast">
+                <h4 id="day-5"></h4>
+                <br>
+                <img src="" alt="" srcset="" id="day5-icon"><br>
+                <p id="day5-Temp"></p><br>
+                <p id="day5-Wind"></p><br>
+                <p id="day5-humid"></p><br>
+            </div>
 
         </div>
 
+        <!-- 5-Day Forecast -->
 
 
     </section>
@@ -68,5 +119,6 @@
         integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
+<!-- body -->
 
 </html>
