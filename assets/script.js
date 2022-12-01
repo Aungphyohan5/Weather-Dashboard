@@ -57,7 +57,7 @@ function getApi() {
                 // current weather data----//
                 cityName.innerHTML = userInput.value + today
                 var icondata = data.list[0].weather[0].icon
-                document.getElementById('weather-icon').src = "http://openweathermap.org/img/w/" + icondata + '.png'
+                document.getElementById('weather-icon').src = "https://openweathermap.org/img/w/" + icondata + '.png'
                 currentTemp.innerHTML = 'Temp: ' + (data.list[0].main.temp).toFixed(2) + '°F'
                 currentWind.innerHTML = 'Wind: ' + (data.list[0].wind.speed) + 'MPH'
                 currentHumid.innerHTML = 'Humidity: ' + (data.list[0].main.humidity) + '°%'
@@ -67,7 +67,7 @@ function getApi() {
                 // Day 1 weather forecast-----//
                 $('#day-1').text(dayjs.unix(data.list[7].dt).format('M / D / YYYY'));
                 var dayIcon = data.list[7].weather[0].icon
-                document.getElementById('day1-icon').src = "http://openweathermap.org/img/w/" + dayIcon + '.png'
+                document.getElementById('day1-icon').src = "https://openweathermap.org/img/w/" + dayIcon + '.png'
                 $('#day1-Temp').text('Temp: ' + (data.list[8].main.temp).toFixed(2) + '°F')
                 $('#day1-Wind').text('Wind: ' + (data.list[8].wind.speed) + 'MPH')
                 $('#day1-humid').text('Humidity: ' + (data.list[8].main.humidity) + '°%')
@@ -76,7 +76,7 @@ function getApi() {
                 // Day 2 weather forecast-----//
                 $('#day-2').text(dayjs.unix(data.list[15].dt).format('M / D / YYYY'));
                 var daytwoIcon = data.list[15].weather[0].icon
-                document.getElementById('day2-icon').src = "http://openweathermap.org/img/w/" + daytwoIcon + '.png'
+                document.getElementById('day2-icon').src = "https://openweathermap.org/img/w/" + daytwoIcon + '.png'
                 $('#day2-Temp').text('Temp: ' + (data.list[15].main.temp).toFixed(2) + '°F')
                 $('#day2-Wind').text('Wind: ' + (data.list[15].wind.speed) + 'MPH')
                 $('#day2-humid').text('Humidity: ' + (data.list[15].main.humidity) + '°%')
@@ -86,7 +86,7 @@ function getApi() {
                 // Day 3 weather forecast-----//
                 $('#day-3').text(dayjs.unix(data.list[23].dt).format('M / D / YYYY'));
                 var daythreeIcon = data.list[23].weather[0].icon
-                document.getElementById('day3-icon').src = "http://openweathermap.org/img/w/" + daythreeIcon + '.png'
+                document.getElementById('day3-icon').src = "https://openweathermap.org/img/w/" + daythreeIcon + '.png'
                 $('#day3-Temp').text('Temp: ' + (data.list[23].main.temp).toFixed(2) + '°F')
                 $('#day3-Wind').text('Wind: ' + (data.list[23].wind.speed) + 'MPH')
                 $('#day3-humid').text('Humidity: ' + (data.list[23].main.humidity) + '°%')
@@ -94,7 +94,7 @@ function getApi() {
                 // Day 4 weather forecast-----//
                 $('#day-4').text(dayjs.unix(data.list[31].dt).format('M / D / YYYY'));
                 var dayfourIcon = data.list[31].weather[0].icon
-                document.getElementById('day4-icon').src = "http://openweathermap.org/img/w/" + dayfourIcon + '.png'
+                document.getElementById('day4-icon').src = "https://openweathermap.org/img/w/" + dayfourIcon + '.png'
                 $('#day4-Temp').text('Temp: ' + (data.list[31].main.temp).toFixed(2) + '°F')
                 $('#day4-Wind').text('Wind: ' + (data.list[31].wind.speed) + 'MPH')
                 $('#day4-humid').text('Humidity: ' + (data.list[31].main.humidity) + '°%')
@@ -102,7 +102,7 @@ function getApi() {
                 // Day 5 weather forecast-----//
                 $('#day-5').text(dayjs.unix(data.list[39].dt).format('M / D / YYYY'));
                 var dayfiveIcon = data.list[39].weather[0].icon
-                document.getElementById('day5-icon').src = "http://openweathermap.org/img/w/" + dayfiveIcon + '.png'
+                document.getElementById('day5-icon').src = "https://openweathermap.org/img/w/" + dayfiveIcon + '.png'
                 $('#day5-Temp').text('Temp: ' + (data.list[39].main.temp).toFixed(2) + '°F')
                 $('#day5-Wind').text('Wind: ' + (data.list[39].wind.speed) + 'MPH')
                 $('#day5-humid').text('Humidity: ' + (data.list[39].main.humidity) + '°%')
